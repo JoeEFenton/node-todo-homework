@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Express todo</title>
+</head>
+<body>
+  <h5>todo-list</h5>
+  <ul>
+  {{#todos}}
+    <li>
+      {{#yetTodo}}
+      <form action = "/complete" method = "post">
+        <input type = "submit" name = "list"value = {{todo}} /> {{todo}}
+      {{#yetTodo}}
+    </li>
+    {{/todos}}
+  </ul>
+  {{^todos}}
+  <h6>nothing to do</h6>
+  {{/todos}}
+  <h4>COmpleted Things</h4>
+  <ul>
+    {{^yetTodo}}
+    <li>
+
+
+</body>
+</html>
